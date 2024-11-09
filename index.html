@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForJenny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <h1> Điền vô đi Jenny</h1>
+        <form onsubmit="return checkLogin()">
+            <label for="Username">Name:</label>
+            <input type="text" id="username" required>
+            <label for="password">What's the magic phrase?</label>
+            <input type="text" id="password" required>
+            <button type="submit">Ready!</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+
+    <div class="letter-container" id="letterContainer" style="display: none;">
+        <h1>Happy 6-month Anniversary baby</h1>
+        <p>
+            To my one and only Bùi Anh Thư, <br><br>
+            Anh biết là cũng lâu rùi anh chưa thực sự "viết thư tình" cho em, nên nhân dịp này anh làm cái này để tỏ tình với em, again. Tại sao dịp này hả, người ta nói anniversary 1 năm là cột mốc quan trọng đầu tiên trong những mối quan hệ yêu đương, vậy thì 6 tháng là nửa cột mốc quan trọng rùi :)) <br><br>
+            Nói chứ thank you for putting up with my shit for the past 6 months &hearts; Thank you for your patience, your kindness, and your unwavering support. I’m counting down by the hours until we’re hugging each other again. <br><br>
+            Here’s to many more months, years, and forever by your side. <br><br>
+            Your baby, <br>
+            Nguyễn Minh Hậu
+        </p>
+    </div>
+
+    <script>
+        function checkLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const correctUsername = "Bui Anh Thu"; // Change to your chosen username
+            const correctPassword = "Vo Yeu Chong"; // Change to your chosen password
+
+            if (username === correctUsername && password === correctPassword) {
+                document.getElementById('loginContainer').style.display = 'none';
+                document.getElementById('letterContainer').style.display = 'block';
+                return false; // Prevent form submission
+            } else {
+                document.getElementById('errorMessage').textContent = "Incorrect username or password. Please try again.";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
