@@ -1,0 +1,104 @@
+body {
+  font-family: 'Arial', 'Tahoma', sans-serif; /* Arial and Tahoma support Vietnamese well */
+  background-color: #81d8d0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.letter-container {
+  max-width: 600px;
+  background: #fff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+  font-family: 'Tahoma', sans-serif; /* Updated font stack for Vietnamese */
+  text-align: center;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+h1 {
+  color: #f35373;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Tahoma', sans-serif; /* Ensure title supports Vietnamese */
+}
+
+.letter-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.letter-container p.intro {
+  margin-top: 0;
+}
+
+.letter-container p.signature {
+  text-align: right;
+  margin-top: 2rem;
+  font-style: italic;
+  color: #555;
+}
+
+.heart-image {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.login-container {
+  max-width: 400px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color change */
+  text-align: center;
+}
+
+input:focus {
+    border-color: #81d8d0; /* Pink border when focused */
+    background-color: #ffffff; /* Baby pink background on focus */
+    outline: none; /* Removes default blue outline */
+}
+
+button {
+  background-color: #f35373;
+  color: whitesmoke;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #81d8d0;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+}
